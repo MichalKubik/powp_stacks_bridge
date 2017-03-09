@@ -7,10 +7,13 @@ import edu.kis.vh.stacks.Stack;
 
 public class stackTest {
 
+	private static final int TEST_VALUE = 4;
+	private static final int EMPTY_STACK_VALUE = -1;
+
 	@Test
 	public void testPush() {
 		Stack stackObj = new Stack();
-		int testValue = 4;
+		int testValue = TEST_VALUE;
 		stackObj.push(testValue);
 
 		int result = stackObj.top();
@@ -46,12 +49,11 @@ public class stackTest {
 	@Test
 	public void testTop() {
 		Stack stackObj = new Stack();
-		final int EMPTY_STACK_VALUE = -1;
 
 		int result = stackObj.top();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 
-		int testValue = 4;
+		int testValue = TEST_VALUE;
 		stackObj.push(testValue);
 
 		result = stackObj.top();
@@ -63,12 +65,11 @@ public class stackTest {
 	@Test
 	public void testPop() {
 		Stack stackObj = new Stack();
-		final int EMPTY_STACK_VALUE = -1;
 
 		int result = stackObj.pop();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 
-		int testValue = 4;
+		int testValue = TEST_VALUE;
 		stackObj.push(testValue);
 
 		result = stackObj.pop();
