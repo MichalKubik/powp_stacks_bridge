@@ -30,5 +30,5 @@ class StacksDemo {
 				+ ((StackHanoi) stacks[3]).reportRejected());
 		
 	}
-	
+
 }

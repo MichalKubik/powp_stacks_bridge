@@ -26,5 +26,5 @@ public class DefaultStacksFactory implements IstacksFactory {
 	public StackHanoi GetHanoiStack() {
 		return new StackHanoi();
 	}
-
+//   alt + -> przechodzi pomiędzy dokonanymi zmianami w kodzie
 }
