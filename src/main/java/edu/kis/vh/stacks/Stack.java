@@ -7,8 +7,16 @@ public class Stack {
 
 	private int[] items = new int[ITEMS_SIZE];	
 
-	public int total = INT;
+	private int total = INT;
 	
+	public int getTotal() {
+		return total;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
+
 	public void push(int i) {
 		if (!isFull())
 		items[++total] = i;

@@ -16,11 +16,11 @@ public class StackList {
 		}
 	}
 
-	public boolean empty() {
+	private boolean empty() {
 		return last == null;
 	}
 
-	public boolean full() {
+	private boolean full() {
 		return false;
 	}
 
