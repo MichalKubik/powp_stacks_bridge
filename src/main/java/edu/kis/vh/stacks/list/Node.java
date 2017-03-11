@@ -2,7 +2,7 @@ package edu.kis.vh.stacks.list;
 
 public class Node {
 
-	private int value;		
+	private final int value;		
 	private Node prev;		
 	private Node next;
 	// odwołania do pól w StackList.java zostały zastąpione przez metody typu get i set
