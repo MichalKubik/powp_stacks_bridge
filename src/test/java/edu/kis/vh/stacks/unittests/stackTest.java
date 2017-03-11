@@ -4,6 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import edu.kis.vh.stacks.Stack;
+import edu.kis.vh.stacks.StackFIFO;
+import edu.kis.vh.stacks.StackHanoi;
 
 public class stackTest {
 
@@ -77,5 +79,30 @@ public class stackTest {
 		result = stackObj.pop();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 	}
+	
+	@Test
+	public void testPopFIFO() {
+		StackFIFO stackObj = new StackFIFO();
+		
+		int result = stackObj.pop();
+		Assert.assertEquals(EMPTY_STACK_VALUE, result);
+		
+		int testValue = TEST_VALUE;
+		stackObj.push(testValue);
+		
+		result = stackObj.pop();
+		Assert.assertEquals(testValue, result);
+		result = stackObj.pop();
+		Assert.assertEquals(EMPTY_STACK_VALUE, result);
+	}
+	
+	@Test
+	public void testPushHanoi() {
+		StackHanoi stackObj = new StackHanoi();
+		int testValue = TEST_VALUE;
+		stackObj.push(testValue);
 
+		int result = stackObj.top();
+		Assert.assertEquals(testValue, result);
+	}
 }
