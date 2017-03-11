@@ -42,16 +42,8 @@ public class StackList {
 		return last;
 	}
 
-	void setLast(Node last) {
-		this.last = last;
-	}
-
 	int getI() {
 		return i;
-	}
-
-	void setI(int i) {
-		this.i = i;
 	}
 
 }

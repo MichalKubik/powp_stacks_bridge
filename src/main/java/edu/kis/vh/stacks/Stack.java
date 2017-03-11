@@ -13,10 +13,6 @@ public class Stack {
 		return total;
 	}
 
-	public void setTotal(int total) {
-		this.total = total;
-	}
-
 	public void push(int i) {
 		if (!isFull())
 		items[++total] = i;
