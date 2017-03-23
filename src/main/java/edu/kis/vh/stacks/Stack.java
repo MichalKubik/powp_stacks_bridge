@@ -41,6 +41,6 @@ public class Stack {
 		return stack.pop();
 	}
 	
-
+// deklaracja znajduje sie w StackInterface, implementacje znajduja sie w StackArray i StackList
 	
 }
