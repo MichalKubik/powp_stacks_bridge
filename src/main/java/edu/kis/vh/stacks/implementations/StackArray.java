@@ -3,12 +3,11 @@ package edu.kis.vh.stacks.implementations;
 import edu.kis.vh.stacks.StackInterface;
 
 public class StackArray implements StackInterface {
-	private static final int INT = -1;
 	private static final int ITEMS_SIZE = 12;
 
 	private int[] items = new int[ITEMS_SIZE];	
 
-	private int total = INT;
+	private int total = StackInterface.INT;
 	
 	public int getTotal() {
 		return total;
@@ -28,7 +27,7 @@ public class StackArray implements StackInterface {
 	 */
 	@Override
 	public boolean isEmpty() {
-		return total == INT;
+		return total == StackInterface.INT;
 	}
 		
 	/* (non-Javadoc)
@@ -45,7 +44,7 @@ public class StackArray implements StackInterface {
 	@Override
 	public int top() {
 		if (isEmpty())
-			return INT;
+			return StackInterface.INT;
 		return items[total];
 	}
 				
@@ -55,7 +54,7 @@ public class StackArray implements StackInterface {
 	@Override
 	public int pop() {
 		if (isEmpty())
-			return INT;
+			return StackInterface.INT;
 		return items[total--];
 	}
 }

@@ -4,7 +4,6 @@ import edu.kis.vh.stacks.StackInterface;
 
 public class StackList implements StackInterface {
 
-	private static final int INT = -1;
 	private Node last;
 	private int i;
 
