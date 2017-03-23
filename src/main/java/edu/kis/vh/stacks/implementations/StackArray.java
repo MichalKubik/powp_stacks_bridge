@@ -1,4 +1,6 @@
-package edu.kis.vh.stacks;
+package edu.kis.vh.stacks.implementations;
+
+import edu.kis.vh.stacks.StackInterface;
 
 public class StackArray implements StackInterface {
 	private static final int INT = -1;
