@@ -4,8 +4,8 @@ import edu.kis.vh.stacks.list.StackList;
 
 public class Stack {
 
-	private StackList stack;
-	
+	private StackInterface stack;
+	// atrybut moze byc typu StackArray lub StackList
 	public Stack(StackList stack) {
 		super();
 		this.stack = stack;
