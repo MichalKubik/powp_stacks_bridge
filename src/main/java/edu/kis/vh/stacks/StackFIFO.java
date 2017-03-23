@@ -5,7 +5,8 @@ import edu.kis.vh.stacks.implementations.StackList;
 
 public class StackFIFO extends Stack {
 
-	private final Stack temp = new Stack();
+	private final StackList temp = new StackList();
+	//StackList ze wzgledu na brak ograniczen w ilosci elementow
 	
 	@Override
 	public int pop() {
