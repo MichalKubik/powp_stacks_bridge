@@ -10,7 +10,7 @@ import edu.kis.vh.stacks.StackHanoi;
 public class stackTest {
 
 	private static final int TEST_VALUE = 4;
-	private static final int EMPTY_STACK_VALUE = -1;
+	private static final int EMPTY_STACK_VALUE = 0;
 
 	@Test
 	public void testPush() {
@@ -45,7 +45,7 @@ public class stackTest {
 		}
 
 		boolean result = stackObj.isFull();
-		Assert.assertEquals(true, result);
+		Assert.assertEquals(false, result); // domyślny ListArray nigdy nie zwraca true ( nigdy nie jest pełny )
 	}
 
 	@Test
@@ -105,4 +105,6 @@ public class stackTest {
 		int result = stackObj.top();
 		Assert.assertEquals(testValue, result);
 	}
+	
+	// Błędy wynikały ze zmiany wartości EMPTY_STACK_VALUE w klasach Stack z -1 na 0, oraz ze zmiany domyślnego typu Stack na ListStack
 }
